@@ -1,0 +1,36 @@
+package labexer1b;
+// making scanner para sa pag e-enter ng integer ng user.
+import java.util.Scanner;
+
+public class LabExer1B {
+    public static void main(String[] args) {
+        Scanner skan = new Scanner(System.in);
+        
+        System.out.println("Adding integers!");
+        System.out.print("Please enter an integer: ");
+        int integer = skan.nextInt();
+        
+        // mga methods na gagamitin para sa code.
+        showNumberPlus10(integer);
+        showNumberPlus100(integer);
+        showNumberPlus1000(integer);
+    }
+    
+    // method para sa ShowNumberPlus10
+    static void showNumberPlus10(int integer){
+        int num10 = integer + 10;
+        System.out.println(integer + " plus 10 is " + num10);
+    }
+    
+    // method para sa showNumberPlus100
+    static void showNumberPlus100(int integer){
+        int num100 = integer + 100;
+        System.out.println(integer + " plus 10 is " + num100);
+    }
+    
+    // method para sa showNumberPlus100
+    static void showNumberPlus1000(int integer){
+        int num1000 = integer + 1000;
+        System.out.println(integer + " plus 10 is " + num1000);
+    }
+}
